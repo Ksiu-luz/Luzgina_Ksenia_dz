@@ -4,10 +4,11 @@ def sum_seven(user_list):
     for number in range(len(user_list)):
         str_number = str(user_list[number])
         for i in range(len(str_number)):
-            sum_in_number += i
-            if sum_in_number % 7 == 0:
-                sum_in_number = 0
-                sum_numbers += number
+            sum_in_number += int(str_number[i])
+        if sum_in_number % 7 == 0:
+            sum_numbers += int(user_list[number])
+        sum_in_number = 0
+
     return sum_numbers
 
 
