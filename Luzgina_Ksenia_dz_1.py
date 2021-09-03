@@ -4,7 +4,7 @@ seconds_in_units = (86400, 3600, 60, 1)
 result = []
 
 
-for i in range(0, 4):
+for i in range(len(units_of_time)):
     if user_time // seconds_in_units[i] != 0:
         result.append(str(user_time // seconds_in_units[i]))
         result.append(units_of_time[i])
