@@ -1,13 +1,14 @@
 user_time = int(input('Введите кол-во секунд: '))
-units = {'дн': 86400, 'час': 3600, 'мин': 60, 'сек': 1}
+units_of_time = ('дн', 'час', 'мин', 'сек')
+seconds_in_units = (86400, 3600, 60, 1)
 result = []
 
 
-for key, val in units.items():
-    if user_time // int(val) != 0:
-        result.append(str(user_time // int(val)))
-        result.append(key)
-        user_time = user_time % int(val)
+for i in range(0, 4):
+    if user_time // seconds_in_units[i] != 0:
+        result.append(str(user_time // seconds_in_units[i]))
+        result.append(units_of_time[i])
+        user_time = user_time % seconds_in_units[i]
 
 
 print(' '.join(result))
