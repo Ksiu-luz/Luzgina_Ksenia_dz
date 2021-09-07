@@ -11,10 +11,13 @@ if __name__ == '__main__':
     for price in prices:
         correct_prices.append(price_format(price))
     print(', '.join(correct_prices))
+    print(id(correct_prices))
 
     print('список цен по возрастанию: ')
 
-    print(sorted(correct_prices))
+    correct_prices.sort()
+    print(correct_prices)
+    print(id(correct_prices))
 
     print('список цен по убыванию: ')
 
