@@ -51,7 +51,7 @@ if __name__ == '__main__':
     users_names = thesaurus('Мария', 'Марина', 'Ульяна', 'Егор')
     print(users_names)
     print(users_names['У'])
-    print(sorted_dict(users_names, reverse=True))
+    print(sorted_dict(users_names, True))
     users_full_names = thesaurus_adv('Виктор Березников', 'Алья Борова',
                                      'Карина Акентьева', 'Виктор Панин', 'Марина Кудрявцева')
     print(users_full_names)
