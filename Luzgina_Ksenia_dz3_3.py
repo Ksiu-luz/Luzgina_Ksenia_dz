@@ -17,7 +17,7 @@ def sorted_dict(user_dict, reverse=False):
         sorted_list = sorted(user_dict)
     result_dict = {}
     for symbol in sorted_list:
-        result_dict[symbol] = users_names[symbol]
+        result_dict[symbol] = user_dict[symbol]
     return result_dict
 
 
