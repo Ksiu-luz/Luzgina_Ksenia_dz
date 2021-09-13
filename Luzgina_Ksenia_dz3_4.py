@@ -1,9 +1,8 @@
 def thesaurus_adv(*args):
-    user_list = args
     result_dict = {}
     names_dict = {}
 
-    for full_names in user_list:
+    for full_names in args:
         first_name = full_names.split(' ')
         first_name = first_name[-1]
         if not first_name[0] in result_dict:
@@ -27,9 +26,8 @@ def thesaurus_adv(*args):
 
 
 def thesaurus(*args):
-    user_list = args
     names_dict = {}
-    for names in user_list:
+    for names in args:
         if not names[0] in names_dict:
             names_dict[names[0]] = []
             names_dict[names[0]].append(names)
