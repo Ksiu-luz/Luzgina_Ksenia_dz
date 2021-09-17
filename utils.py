@@ -34,10 +34,3 @@ def currency_rates(char_name):
 
     if char_name in value_dict:
         return value_dict[char_name]
-
-
-if __name__ == '__main__':
-    print(currency_rates('USD'))
-    print(type(currency_rates('USD')))
-    print(currency_rates('usd'))
-    print(currency_rates('USDf'))
