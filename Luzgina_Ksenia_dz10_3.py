@@ -21,6 +21,9 @@ class Cell:
         return self.num * other.num
 
     def __truediv__(self, other):
+        return round(self.num / other.num)
+
+    def __floordiv__(self, other):
         return self.num // other.num
 
 
@@ -34,3 +37,4 @@ if __name__ == '__main__':
     print(cell_2 - cell_1)
     print(cell_1 * cell_2)
     print(cell_1 / cell_2)
+    print(cell_1 // cell_2)
